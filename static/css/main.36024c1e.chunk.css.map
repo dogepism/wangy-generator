@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,iBAEE,wBACF,CAIA,sBAAiB,UAAa","file":"main.36024c1e.chunk.css","sourcesContent":[".App-header,\r\nhtml {\r\n  background-color: #121212;\r\n}\r\n\r\nlabel {color: white}\r\n\r\n.textColorTheme{ color: white;}\r\n"]}
