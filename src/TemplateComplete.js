@@ -26,7 +26,7 @@ function TemplateComplete(props) {
     return (
         <div className="container mt-5">
             <div className="row">
-                <div>{FinishedWords}</div>
+                <div className="textColorTheme">{FinishedWords}</div>
             </div>
             <div className="row mt-5">
                 <Button variant="primary" onClick={() => copy(FinishedWords)}>Copy To Clipboard</Button>{' '}
