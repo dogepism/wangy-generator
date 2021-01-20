@@ -15,18 +15,12 @@ function App() {
   const [words, setWords] = useState('');
   const [selection, setSelection] = useState('keqing')
 
-  const [checked, setChecked] = useState(false);
-  const radios = [
-    { name: 'Light Mode', value: 'light' },
-    { name: 'Dark Mode', value: 'dark' },
-  ];
-
   // eslint-disable-next-line
   const [template, setTemplate] = useState('');
   const [theme, setTheme] = useState('light');
   const themeToggler = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light')
-}
+  }
 
   const onChange = (event) => {
     setWords(event.target.value);
@@ -37,42 +31,61 @@ function App() {
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <>
-      <GlobalStyles />
-      <div>
-        <div className="container pt-5">
-          <div className="row">
-            <div className="col">
-              <label className={theme === 'light' ? "textColorTheme" : ""}>
-                Name:
-            </label>
-              <input className="form-control" type="text" value={words} onChange={onChange} />
+        <GlobalStyles />
+        <div>
+          <nav className={"navbar navbar-expand-lg" + (theme === 'light' ? " navbar-light bg-light" : " navbar-dark bg-dark")}>
+            <a className="navbar-brand" href="#">Wangy Generator</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav ml-auto">
+                <li className="nav-item active">
+                  <button
+                    className={"btn "+(theme === 'light' ? "btn-light":"btn-dark")}
+                    onClick={themeToggler}
+                  >
+                    Switch Theme
+                  </button>
+                </li>
+              </ul>
             </div>
-            <div className="col">
-              <label>
-                Template
-          </label>
-              <select defaultValue="keqing" className="form-control" onChange={e => setSelection(e.target.value)}>
-                <option value="keqing">template 1</option>
-                <option value="venti">template 2</option>
-                <option value="ganyu">template 3</option>
-                <option value="qiqi">template 4</option>
-              </select>
+          </nav>
+        </div>
 
+        <div>
+          <div className="container pt-5">
+            <div className="row">
+              <div className="col">
+                <label className={theme === 'light' ? "textColorTheme" : ""}>
+                  Name:
+                </label>
+                <input className="form-control" type="text" value={words} onChange={onChange} />
+              </div>
+              <div className="col">
+                <label>
+                  Template
+                </label>
+                <select defaultValue="keqing" className="form-control" onChange={e => setSelection(e.target.value)}>
+                  <option value="keqing">template 1</option>
+                  <option value="venti">template 2</option>
+                  <option value="ganyu">template 3</option>
+                  <option value="qiqi">template 4</option>
+                </select>
+              </div>
             </div>
-          </div>
 
-          <div className="row">
-            {template}
-            <TemplateComplete selection={selection} words={words} theme={theme} />
-          </div>
+            <div>
+              {template}
+              <TemplateComplete selection={selection} words={words} theme={theme} />
+            </div>
 
-          <br />
+            <br />
 
-          <div className="row">
-          <button onClick={themeToggler}>Switch Theme</button>
+            <div className="row">
+            </div>
           </div>
         </div>
-      </div>
       </>
     </ThemeProvider>
   );
