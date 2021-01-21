@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/wangy-generator/static/css/main.6c6f1331.chunk.css",
-    "main.js": "/wangy-generator/static/js/main.26e6b711.chunk.js",
-    "main.js.map": "/wangy-generator/static/js/main.26e6b711.chunk.js.map",
+    "main.css": "/wangy-generator/static/css/main.0ca933cf.chunk.css",
+    "main.js": "/wangy-generator/static/js/main.6ce025bb.chunk.js",
+    "main.js.map": "/wangy-generator/static/js/main.6ce025bb.chunk.js.map",
     "runtime-main.js": "/wangy-generator/static/js/runtime-main.e1c325fe.js",
     "runtime-main.js.map": "/wangy-generator/static/js/runtime-main.e1c325fe.js.map",
     "static/css/2.150d169a.chunk.css": "/wangy-generator/static/css/2.150d169a.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.b0498ea0.chunk.js.map": "/wangy-generator/static/js/2.b0498ea0.chunk.js.map",
     "index.html": "/wangy-generator/index.html",
     "static/css/2.150d169a.chunk.css.map": "/wangy-generator/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.6c6f1331.chunk.css.map": "/wangy-generator/static/css/main.6c6f1331.chunk.css.map",
+    "static/css/main.0ca933cf.chunk.css.map": "/wangy-generator/static/css/main.0ca933cf.chunk.css.map",
     "static/js/2.b0498ea0.chunk.js.LICENSE.txt": "/wangy-generator/static/js/2.b0498ea0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e1c325fe.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.b0498ea0.chunk.js",
-    "static/css/main.6c6f1331.chunk.css",
-    "static/js/main.26e6b711.chunk.js"
+    "static/css/main.0ca933cf.chunk.css",
+    "static/js/main.6ce025bb.chunk.js"
   ]
 }
